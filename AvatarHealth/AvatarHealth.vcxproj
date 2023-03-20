@@ -129,11 +129,13 @@
   <ItemGroup>
     <ClInclude Include="AvatarHealth.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Health.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AvatarHealth.cpp" />
+    <ClCompile Include="Health.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="AvatarHealth.rc" />
