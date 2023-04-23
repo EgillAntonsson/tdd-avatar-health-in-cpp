@@ -1,7 +1,9 @@
 #include "pch.h"
 #include "../AvatarHealth/Health.h"
 
-TEST(Constructor, HasStartingValue) {
-	Health health;
-	EXPECT_EQ(health.points, 12);
+TEST(Constructor, CurrentPoints_HasStartingValue)
+{
+	auto startingPoints = 12;
+	Health health = Health(startingPoints);
+	EXPECT_EQ(health.GetCurrentPoints(), 12);
 }

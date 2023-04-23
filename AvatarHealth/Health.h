@@ -3,5 +3,8 @@
 class Health
 {
 public:
-	int points = 12;
+	Health(int startingPoints);
+	int GetCurrentPoints();
+private:
+	int currentPoints;
 };
