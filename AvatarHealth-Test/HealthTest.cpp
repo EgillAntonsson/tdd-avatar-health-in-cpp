@@ -1,18 +1,29 @@
 #include "pch.h"
 #include "../AvatarHealth/Health.h"
-#include "HealthTest.h"
 
-TEST(Constructor, CurrentPoints_HasStartingValue)
+using namespace std;
+using ::testing::TestWithParam;
+using ::testing::Values;
+
+class CurrentPointsHasStartingValues : public TestWithParam<int> { };
+INSTANTIATE_TEST_CASE_P(Constructor, CurrentPointsHasStartingValues,
+	Values(1, 12)
+);
+TEST_P(CurrentPointsHasStartingValues, Value)
 {
-	auto startingPoints = 12;
-	Health health = Health(startingPoints);
-	EXPECT_EQ(health.GetCurrentPoints(), startingPoints);
+	auto param = GetParam();
+	Health health = Health(param);
+	EXPECT_EQ(health.GetCurrentPoints(), param);
 }
 
-TEST(Constructor, ThrowsError_WhenStartingPointsIsInvalid)
+class ThrowsExWhenStartingPoints : public TestWithParam<int> { };
+INSTANTIATE_TEST_CASE_P(Constructor, ThrowsExWhenStartingPoints,
+	Values(0, -1)
+);
+TEST_P(ThrowsExWhenStartingPoints, Value)
 {
 	EXPECT_THROW(
 		{
-			Health health = Health(0);
-		}, std::out_of_range);
+			Health health = Health(GetParam());
+		}, out_of_range);
 }
