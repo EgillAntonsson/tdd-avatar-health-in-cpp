@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AvatarHealth", "AvatarHealth\AvatarHealth.vcxproj", "{1FBF6F22-26F2-4BC9-A659-2BB3E1F60F6A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AvatarHealth-Test", "AvatarHealth-Test\AvatarHealth-Test.vcxproj", "{B310E816-7F78-4B5A-8AA7-8FF3C9B17D82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{1FBF6F22-26F2-4BC9-A659-2BB3E1F60F6A}.Release|x64.Build.0 = Release|x64
 		{1FBF6F22-26F2-4BC9-A659-2BB3E1F60F6A}.Release|x86.ActiveCfg = Release|Win32
 		{1FBF6F22-26F2-4BC9-A659-2BB3E1F60F6A}.Release|x86.Build.0 = Release|Win32
+		{B310E816-7F78-4B5A-8AA7-8FF3C9B17D82}.Debug|x64.ActiveCfg = Debug|x64
+		{B310E816-7F78-4B5A-8AA7-8FF3C9B17D82}.Debug|x64.Build.0 = Debug|x64
+		{B310E816-7F78-4B5A-8AA7-8FF3C9B17D82}.Debug|x86.ActiveCfg = Debug|Win32
+		{B310E816-7F78-4B5A-8AA7-8FF3C9B17D82}.Debug|x86.Build.0 = Debug|Win32
+		{B310E816-7F78-4B5A-8AA7-8FF3C9B17D82}.Release|x64.ActiveCfg = Release|x64
+		{B310E816-7F78-4B5A-8AA7-8FF3C9B17D82}.Release|x64.Build.0 = Release|x64
+		{B310E816-7F78-4B5A-8AA7-8FF3C9B17D82}.Release|x86.ActiveCfg = Release|Win32
+		{B310E816-7F78-4B5A-8AA7-8FF3C9B17D82}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

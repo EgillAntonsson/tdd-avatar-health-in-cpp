@@ -103,7 +103,10 @@
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
+      <ConformanceMode>Default</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <EnableModules>false</EnableModules>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -129,11 +132,13 @@
   <ItemGroup>
     <ClInclude Include="AvatarHealth.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Health.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AvatarHealth.cpp" />
+    <ClCompile Include="Health.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="AvatarHealth.rc" />
